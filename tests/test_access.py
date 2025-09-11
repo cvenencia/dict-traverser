@@ -84,6 +84,9 @@ def test_access_nested_array():
     with pytest.raises(KeyError):
         tv['nested.array.[2].key']
 
+    assert tv['nested.array.[-1].key'] == 2
+    assert tv['nested.array.[-2].key'] == 1
+
 
 def test_keys():
     sentinel = object()

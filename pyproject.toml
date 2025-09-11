@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dict-traverser"
-version = "1.0.0"
+version = "1.0.1"
 description = "Dict wrapper for accessing, updating, and deleting values in deeply nested dictionaries and lists using dot-notation paths with optional array indexing."
 authors = [{ name="Carlos Venencia", email="carlos@cvenencia.com" }]
 readme = "README.md"

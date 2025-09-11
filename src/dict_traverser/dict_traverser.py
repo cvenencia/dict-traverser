@@ -1,6 +1,6 @@
 import re
 
-_INDEX_REGEX = r'\[(\d+)\]'
+_INDEX_REGEX = r'\[(-?\d+)\]'
 
 
 def unwind(obj: dict, initial_key: str | None = None, separator='.'):

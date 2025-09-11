@@ -2,7 +2,7 @@
 
 Simple wrapper to work with deeply nested Python dictionaries and lists using dot-notation paths.
 
-It supports safe lookups, nested updates, automatic structure creation, array indexing, and key deletion—ideal for working with JSON-like data structures.
+It supports safe lookups, nested updates, automatic structure creation, array indexing, and key deletion, ideal for working with JSON-like data structures.
 
 ## Installation
 
@@ -32,6 +32,7 @@ tv = DictTraverser(data)
 print(tv['user.profile.name'])  # 'Alice'
 print(tv.get('user.profile.age', 30))  # 30 (default)
 print(tv['user.profile.emails.[0]']) # first@example.com
+print(tv['user.profile.emails.[-1]']) # second@example.com
 
 # Set values (automatically creates the necessary structures)
 tv['user.profile.age'] = 25
